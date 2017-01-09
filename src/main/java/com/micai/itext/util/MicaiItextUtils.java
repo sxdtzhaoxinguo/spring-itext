@@ -3,11 +3,6 @@
  */
 package com.micai.itext.util;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.net.MalformedURLException;
-
 import com.itextpdf.awt.geom.Rectangle2D.Float;
 import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.DocumentException;
@@ -19,6 +14,11 @@ import com.itextpdf.text.pdf.parser.ImageRenderInfo;
 import com.itextpdf.text.pdf.parser.PdfReaderContentParser;
 import com.itextpdf.text.pdf.parser.RenderListener;
 import com.itextpdf.text.pdf.parser.TextRenderInfo;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
 
 /**
  * Created by zhaoxinguo on 2016年11月17日 下午4:35:01.
@@ -116,5 +116,7 @@ public class MicaiItextUtils {
 		MicaiItextUtils.addWaterMark(filePath, destPath, markImagePath, words[0], words[1], words[2]);
 		System.out.println("添加水印成功");
 	}
+
+
 	
 }
